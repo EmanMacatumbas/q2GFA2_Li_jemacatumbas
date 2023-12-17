@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+}
+header{visibility: hidden;}
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+body{
+    background: url(../images/space.png);
+    display: inline-block;
+}
+.planet{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.surface{
+    display: inline-block;
+    left: -50%;
+    top: 85%;
+    position: absolute;
+}
+.surfpic{
+    height: 200vh;
+    width: 200vw;
+}
+#a1{
+    background-image: url(../media/a1.gif);
+    width: 10vw;
+    aspect-ratio: 1/1;
+    animation:yellow1 30s linear infinite;
+}
+#a2{
+    background-image: url(../media/a2.gif);
+    width: 5vw;
+    aspect-ratio: 1/1;
+    animation:grey1 20s linear infinite;
+}
+#a3{
+    background-image: url(../media/a3.gif);
+    width: 5vw;
+    aspect-ratio: 1/1;
+    animation:purple1 200s linear infinite;
+}
+#a4{
+    background-image: url(../media/a4.gif);
+    width: 35vw;
+    aspect-ratio: 1/1;
+    animation:red1 35s linear infinite;
+}
+#a5{
+    background-image: url(../media/a5.gif);
+    width: 17vw;
+    aspect-ratio: 1/1;
+    animation:green2 30s linear infinite;
+}
+#a6{
+    background-image: url(../media/a6.gif);
+    width: 15vw;
+    aspect-ratio: 1/1;
+    animation:yellow2 30s linear infinite;
+}
+@keyframes yellow1{
+    0% {transform: translate(-100vw, -50vh);}
+    100% {transform: translate(120vw, 120vh);}
+}
+@keyframes grey1{
+    0% {transform: translate(-120vw, -100vh);}
+    100% {transform: translate(200vw, 120vh);}
+}
+@keyframes red1{
+    0% {transform: translate(10vw, 120vh);}
+    100% {transform: translate(75vw, -40vh);}
+}
+@keyframes purple1{
+    0% {transform: translate(-5vw, -30vh);}
+    100% {transform: translate(110vw, -20vh);}
+}
+@keyframes yellow2{
+    0% {transform: translate(120vw, -70vh);}
+    100% {transform: translate(-20vw, 20vh);}
+}
+@keyframes green2{
+    0% {transform: translate(-50vw, 10vh);}
+    100% {transform: translate(50vw, 50vh);}
+}
